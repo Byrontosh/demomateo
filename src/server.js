@@ -24,7 +24,7 @@ cloudinary.config({
 
 app.use(fileUpload({
     useTempFiles : true,
-    tempFileDir : './uploads'
+    tempFileDir : '/tmp/'
 }))
 
 
@@ -47,7 +47,7 @@ app.use(express.json())
 
 // RUTA PRINCIPAL
 app.get('/',(req,res)=>{
-    res.send("OK-mm")
+    res.send("OK-V1")
 })
 
 // RUTAS PARA EL TOUR
