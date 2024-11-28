@@ -47,9 +47,9 @@ const createTourController = async (req,res) => {
         newTourData.public_id = cloudinaryResponse.public_id
         const tour = await tourModel.createTourModel(newTourData)
         await fs.unlink(req.files.imagen.tempFilePath)
-        res.status(201).json(tour)
+        res.status(201).json(tour.message)
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json(error.message)
     }
 }
 
