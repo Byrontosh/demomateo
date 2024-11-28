@@ -20,7 +20,7 @@ const tourModel = {
     ,
 
     async getTourByIdModel(tourId) {
-        const response = await fetch(`${process.env.URL_BDD_TOURS}/${tourId}`);
+        const response = await fetch(`https://666774e6a2f8516ff7a7882e.mockapi.io/tours/${tourId}`);
         if (!response.ok) {
             return {error:"Tour no encontrado"}
         }
@@ -30,7 +30,7 @@ const tourModel = {
 
     async createTourModel(newTour){
         // 1.- CONEXION BDD
-        const url = process.env.URL_BDD_TOURS
+        const url = 'https://666774e6a2f8516ff7a7882e.mockapi.io/tours/'
         // 2.- ENVIAR DATA A LA BDD
         const peticion = await fetch(url,{
             method:"POST",

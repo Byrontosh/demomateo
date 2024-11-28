@@ -47,7 +47,7 @@ app.use(express.json())
 
 // RUTA PRINCIPAL
 app.get('/',(req,res)=>{
-    res.send("OK-V2")
+    res.send("OK-V3")
 })
 
 // RUTAS PARA EL TOUR
