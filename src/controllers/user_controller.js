@@ -21,7 +21,7 @@ const registerUserController = async(req,res) => {
         res.status(200).json(user)
 
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json(error.message)
     }
 
 }
@@ -40,7 +40,7 @@ const loginUserController = async (req,res) => {
         res.status(200).json({user,token})
 
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json(error.message)
     }
 
 
