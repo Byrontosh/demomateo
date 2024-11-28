@@ -8,7 +8,7 @@ const tourModel = {
     
     async getAllToursModel(){
         try {
-            const peticion = await fetch(process.env.URL_BDD_TOURS)
+            const peticion = await fetch("https://666774e6a2f8516ff7a7882e.mockapi.io/tours/")
             const tours = await peticion.json()
             return tours
         } catch (error) {
