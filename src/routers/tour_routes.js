@@ -11,9 +11,9 @@ router.get('/tours/:id',getAlltourControllerByID)
 
 
 // Privada - Admin o Empleado
-router.post('/tours', verifYtoken , createTourController)
-router.put('/tours/:id',verifYtoken, updatedTourController)
-router.delete('/tours/:id',verifYtoken, deleteTourController)
+router.post('/tours' , createTourController)
+router.put('/tours/:id', updatedTourController)
+router.delete('/tours/:id', deleteTourController)
 
 
 
